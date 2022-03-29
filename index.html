@@ -10,7 +10,172 @@
 </head>
 
 <body>
+  <section class="section section_color_light-blue industrial-ai">
+    <h2 class="section__heading text_color_black">INDUSTRIAL AI RESEARCH LAB</h2>
+    <div class="industrial-ai__text-container">
+      <p class="section__text text_color_black">Центр национальной технологической инициативы (НТИ), получивший государственную поддержку
+        по направлению «Технологии машинного обучения
+        и когнитивные технологии».
+      </p>
+      <p class="section__text text_color_black text_type_light">Мы изучаем проблемы и выявляем, когда мы работаем вместе с нашими клиентами, новые решения находят, не задумываясь.
+        Работая таким образом и проявляя гибкость, мы можем поддерживать новый подход для удовлетворения потребностей наших клиентов.
+      </p>
+    </div>
+    <div class="industrial-ai__photos-container">
+      <img src="./images/Lab/image 38.png" alt="#" class="industrial-ai__photo">
+      <img src="./images/Lab/image 35.png" alt="#" class="industrial-ai__photo">
+    </div>
+    <ul class="industrial-ai__cards-container">
+      <li class="industrial-ai__card">
+        <h3 class="industrial-ai__card-heading">Анализ социальных данных</h3>
+        <div class="industrial-ai__card-icon"></div>
+        <p class="industrial-ai__card-text">Направление включает в себя исследования и разработки технологий МО и КТ</p>
+        <button type="button" class="industrial-ai__card-link">Подробнее</button>
+      </li>
+      <li class="industrial-ai__card">
+        <h3 class="industrial-ai__card-heading">Инфраструктура больших данных</h3>
+        <div class="industrial-ai__card-icon"></div>
+        <p class="industrial-ai__card-text">Направление включает в себя исследования и разработки технологий МО и КТ</p>
+        <button type="button" class="industrial-ai__card-link">Подробнее</b>
+      </li>
+      <li class="industrial-ai__card">
+        <h3 class="industrial-ai__card-heading">Облачные<br>вычисления</h3>
+        <div class="industrial-ai__card-icon"></div>
+        <p class="industrial-ai__card-text">Направление включает в себя исследования и разработки технологий МО и КТ</p>
+        <button type="button" class="industrial-ai__card-link">Подробнее</b>
+      </li>
+      <li class="industrial-ai__card">
+        <h3 class="industrial-ai__card-heading">QA<br>системы</h3>
+        <div class="industrial-ai__card-icon"></div>
+        <p class="industrial-ai__card-text">Направление включает в себя исследования и разработки технологий МО и КТ</p>
+        <button type="button" class="industrial-ai__card-link">Подробнее</b>
+      </li>
+    </ul>
+  </section>
+  <style>
+    .industrial-ai {
+      display: grid;
+      gap: 20px;
+      grid-template-areas:
+        "heading"
+        "photos"
+        "texts"
+        "cards"
+      ;
+      grid-template-rows: repeat(4, min-content);
+      grid-template-columns: 100%;
+    }
 
+    .industrial-ai__photo:first-of-type {
+      display: none;
+    }
+
+    .section {
+      padding: 40px 16px;
+    }
+
+    .section_color_light-blue {
+      background-color: #E0F0FF;
+    }
+
+    .section__heading {
+      grid-area: heading;
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .industrial-ai__text-container {
+      grid-area: texts;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .section__text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .text_color_black {
+      color: #000D26;
+    }
+
+    .industrial-ai__photo {
+      grid-area: photos;
+      width: 100%;
+    }
+
+    .industrial-ai__cards-container {
+      grid-area: cards;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .industrial-ai__card {
+      width: 140px;
+      height: 242px;
+      padding: 10px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    .industrial-ai__card-link {
+      width: 100%;
+      height: 32px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    .industrial-ai__card-text {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+
+      color: #001337;
+    }
+
+    .industrial-ai__card-heading {
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+    }
+
+    .industrial-ai__card-icon {
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      box-shadow: 0px 2px 11px rgba(1, 54, 157, 0.15);
+      width: 40px;
+      height: 40px;
+    }
+
+    .industrial-ai__card:nth-of-type(1)>.industrial-ai__card-icon {
+      background-image: url('./images/icons/Pencil.svg');
+    }
+
+    .industrial-ai__card:nth-of-type(2)>.industrial-ai__card-icon {
+      background-image: url('./images/icons/Brain.svg');
+    }
+
+    .industrial-ai__card:nth-of-type(3)>.industrial-ai__card-icon {
+      background-image: url('./images/icons/Processor.svg');
+    }
+
+    .industrial-ai__card:nth-of-type(4)>.industrial-ai__card-icon {
+      background-image: url('./images/icons/Robot.svg');
+    }
+  </style>
 </body>
 
 </html>
