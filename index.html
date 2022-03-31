@@ -104,6 +104,7 @@
 
     .industrial-ai__photo {
       grid-area: photos;
+      height: 100%;
       width: 100%;
     }
 
@@ -137,6 +138,7 @@
       font-weight: 600;
       font-size: 10px;
       line-height: 14px;
+      z-index: 1;
     }
 
     .industrial-ai__card-text {
@@ -146,6 +148,7 @@
       text-align: center;
 
       color: #001337;
+      z-index: 1;
     }
 
     .industrial-ai__card-heading {
@@ -153,6 +156,7 @@
       font-size: 10px;
       line-height: 14px;
       text-align: center;
+      z-index: 1;
     }
 
     .industrial-ai__card-icon {
@@ -163,6 +167,7 @@
       box-shadow: 0px 2px 11px rgba(1, 54, 157, 0.15);
       width: 40px;
       height: 40px;
+      z-index: 1;
     }
 
     .industrial-ai__card:nth-of-type(1)>.industrial-ai__card-icon {
@@ -180,26 +185,11 @@
     .industrial-ai__card:nth-of-type(4)>.industrial-ai__card-icon {
       background-image: url('./images/icons/Robot.svg');
     }
-    
 
-    @media (min-width: 700px) {
-      .section {
-        padding: 60px 39px;
-      }
-
+    @media (min-width: 400px) {
       .section__heading {
         font-size: 24px;
         line-height: 33px;
-      }
-
-      .industrial-ai {
-        grid-template-areas:
-          "heading heading"
-          "texts photos"
-          "cards cards"
-        ;
-        /* grid-template-rows: min-content 20vw 100%; */
-        grid-template-columns: repeat(2, 1fr);
       }
 
       .section__text {
@@ -211,7 +201,61 @@
         font-weight: 300;
       }
 
-      /* .industrial-ai__card:nth-of-type(1) {
+      .industrial-ai__card-heading {
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .industrial-ai__card-text {
+        font-size: 10px;
+        line-height: 14px;
+      }
+
+      .industrial-ai__card-icon {
+        width: 41px;
+        height: 41px;
+      }
+
+      .industrial-ai__card {
+        position: relative;
+        padding: 30px 20px 20px 20px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .industrial-ai__cards-container {
+        grid-template-columns: repeat(4, minmax(120px, 255px));
+        grid-auto-rows: minmax(220px, 30vw);
+        justify-items: center;
+      }
+    }
+
+
+    @media (min-width: 700px) {
+      .section {
+        padding: 60px 39px;
+      }
+
+      .industrial-ai {
+        grid-template-areas:
+          "heading heading"
+          "texts photos"
+          "cards cards"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: min-content 240px auto;
+      }
+
+      .industrial-ai__card::after {
+        content: '';
+        background: linear-gradient(180deg, white 0%, transparent 150%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+
+      .industrial-ai__card:nth-of-type(1) {
         background-image: url('./images/Lab/Project.png');
       }
 
@@ -225,22 +269,6 @@
 
       .industrial-ai__card:nth-of-type(4) {
         background-image: url('./images/Lab/Robot.png');
-      } */
-
-      .industrial-ai__card-heading {
-        font-size: 12px;
-        line-height: 16px;
-      }
-
-      .industrial-ai__card-icon {
-        width: 41px;
-        height: 41px;
-      }
-
-      .industrial-ai__cards-container {
-        grid-template-columns: repeat(4, minmax(150px, 255px));
-        grid-auto-rows: 30vw;
-        justify-items: center;
       }
     }
 
@@ -250,21 +278,7 @@
       }
     }
 
-    @media (min-width: 1080px) {
-      .industrial-ai {
-        gap: 60px 30px;
-      }
-
-      .section__heading {
-        font-size: 36px;
-        line-height: 68px;
-      }
-
-      .section__text {
-        font-size: 18px;
-        line-height: 30px;
-      }
-
+    @media (min-width: 800px) {
       .industrial-ai__photos-container {
         display: flex;
         justify-content: space-between;
@@ -280,9 +294,22 @@
       .industrial-ai__photo:first-child {
         display: block;
       }
+    }
 
-      .industrial-ai__card {
-        padding: 30px 20px 20px 20px;
+    @media (min-width: 1080px) {
+      .industrial-ai {
+        gap: 60px 30px;
+        grid-auto-rows: min-content 290px auto;
+      }
+
+      .section__heading {
+        font-size: 36px;
+        line-height: 68px;
+      }
+
+      .section__text {
+        font-size: 18px;
+        line-height: 30px;
       }
 
       .industrial-ai__card-heading {
@@ -307,7 +334,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       .section {
         padding: 80px 165px;
       }
