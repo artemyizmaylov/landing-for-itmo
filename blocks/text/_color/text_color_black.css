@@ -1,0 +1,9 @@
+.industrial-ai__photo {
+    grid-area: photos;
+    height: 100%;
+    width: 100%;
+}
+
+.text_color_black {
+    color: #000D26;
+}

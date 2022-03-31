@@ -1,0 +1,16 @@
+.industrial-ai__photo:first-of-type {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .industrial-ai__photo {
+        height: 99%;
+        width: 49%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .industrial-ai__photo:first-child {
+        display: block;
+    }
+}

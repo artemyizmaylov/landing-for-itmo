@@ -1,0 +1,21 @@
+.section__heading {
+    grid-area: heading;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media (min-width: 400px) {
+    .section__heading {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .section__heading {
+        font-size: 36px;
+        line-height: 68px;
+    }
+}

@@ -1,0 +1,22 @@
+.industrial-ai__text-container {
+    position: relative;
+    grid-area: texts;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+
+
+@media (min-width: 1080px) {
+    .industrial-ai__text-container::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url('../../../images/icons/moleculer.svg');
+        position: absolute;
+        top: 45%;
+        left: -36px;
+    }
+}

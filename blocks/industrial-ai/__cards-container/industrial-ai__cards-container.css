@@ -1,0 +1,22 @@
+.industrial-ai__cards-container {
+    grid-area: cards;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, calc(50vw - 20px));
+    grid-auto-rows: calc(100vw - 76px);
+    gap: 8px;
+}
+
+@media (min-width: 600px) {
+    .industrial-ai__cards-container {
+        grid-template-columns: repeat(4, minmax(120px, 255px));
+        grid-auto-rows: minmax(220px, 30vw);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .industrial-ai__cards-container {
+        gap: 30px;
+    }
+}

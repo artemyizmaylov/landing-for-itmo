@@ -1,0 +1,6 @@
+@media (min-width: 800px) {
+    .industrial-ai__photos-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
