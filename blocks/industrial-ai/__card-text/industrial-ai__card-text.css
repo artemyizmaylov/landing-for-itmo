@@ -1,0 +1,30 @@
+.industrial-ai__card-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #001337;
+    z-index: 1;
+}
+
+@media (min-width: 400px) {
+    .industrial-ai__card-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .industrial-ai__card-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .industrial-ai__card-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -1,2 +1,22 @@
 @import url('../vendor/normalize.css');
+@import url('../vendor/global.css');
 @import url('../vendor/fonts.css');
+
+@import url('../blocks/section/section.css');
+@import url('../blocks/section/__heading/section__heading.css');
+@import url('../blocks/section/__text/section__text.css');
+@import url('../blocks/section/_color/section_color_light-blue.css');
+
+@import url('../blocks/text/_color/text_color_black.css');
+@import url('../blocks/text/_type/text_type_light.css');
+
+@import url('../blocks/industrial-ai/industrial-ai.css');
+@import url('../blocks/industrial-ai/__card-heading/industrial-ai__card-heading.css');
+@import url('../blocks/industrial-ai/__card-icon/industrial-ai__card-icon.css');
+@import url('../blocks/industrial-ai/__card-link/industrial-ai__card-link.css');
+@import url('../blocks/industrial-ai/__card-text/industrial-ai__card-text.css');
+@import url('../blocks/industrial-ai/__card/industrial-ai__card.css');
+@import url('../blocks/industrial-ai/__cards-container/industrial-ai__cards-container.css');
+@import url('../blocks/industrial-ai/__photo/industrial-ai__photo.css');
+@import url('../blocks/industrial-ai/__photos-container/industrial-ai__photos-container.css');
+@import url('../blocks/industrial-ai/__text-container/industrial-ai__text-container.css');

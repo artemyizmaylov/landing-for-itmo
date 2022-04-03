@@ -1,0 +1,47 @@
+.industrial-ai__card-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 11px rgba(1, 54, 157, 0.15);
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.industrial-ai__card:nth-of-type(1) > .industrial-ai__card-icon {
+    background-image: url('../../../images/icons/Pencil.svg');
+}
+
+.industrial-ai__card:nth-of-type(2) > .industrial-ai__card-icon {
+    background-image: url('../../../images/icons/Brain.svg');
+}
+
+.industrial-ai__card:nth-of-type(3) > .industrial-ai__card-icon {
+    background-image: url('../../../images/icons/Processor.svg');
+}
+
+.industrial-ai__card:nth-of-type(4) > .industrial-ai__card-icon {
+    background-image: url('../../../images/icons/Robot.svg');
+}
+
+@media (min-width: 400px) {
+    .industrial-ai__card-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 600px) {
+    .industrial-ai__card-icon {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .industrial-ai__card-icon {
+        width: 70px;
+        height: 70px;
+    }
+}

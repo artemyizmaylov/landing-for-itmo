@@ -1,0 +1,19 @@
+.section__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media (min-width: 400px) {
+    .section__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .section__text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

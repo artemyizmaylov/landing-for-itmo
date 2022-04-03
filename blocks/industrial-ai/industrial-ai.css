@@ -1,0 +1,29 @@
+.industrial-ai {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "heading"
+        "photos"
+        "texts"
+        "cards"
+    ;
+}
+
+@media (min-width: 700px) {
+    .industrial-ai {
+        grid-template-areas:
+            "heading heading"
+            "texts photos"
+            "cards cards"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: min-content 240px auto;
+    }
+}
+
+@media (min-width: 1080px) {
+    .industrial-ai {
+        gap: 60px 30px;
+        grid-auto-rows: min-content 290px auto;
+    }
+}
