@@ -22,3 +22,8 @@
 @import url('../blocks/industrial-ai/__photo/industrial-ai__photo.css');
 @import url('../blocks/industrial-ai/__photos-container/industrial-ai__photos-container.css');
 @import url('../blocks/industrial-ai/__text-container/industrial-ai__text-container.css');
+
+@import url('../blocks/feedback-form/feedback-form.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/form/__button/form__button.css');
+@import url('../blocks/form/__input/form__input.css');

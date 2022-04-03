@@ -1,0 +1,13 @@
+.form__button {
+    border-radius: 10px;
+    border: 1px solid white;
+    grid-column: 2/3;
+    margin-top: 17px;
+}
+
+@media (max-width: 600px) {
+    .form__button {
+        height: 44px;
+        margin: 0;
+    }
+}

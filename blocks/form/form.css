@@ -1,0 +1,37 @@
+.form {
+    display: grid;
+    gap: 20px 29px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 60px 60px 77px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.form > #message {
+    grid-row: 1/3;
+    grid-column: 3/3;
+}
+
+@media (max-width: 600px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form > #message {
+        min-height: 140px;
+        margin-bottom: 11px;
+    }
+}
+
+@media (max-width: 730px) {
+    .form {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form {
+        grid-auto-rows: 44px 44px 61px;
+    }
+}

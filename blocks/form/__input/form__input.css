@@ -1,0 +1,19 @@
+.form__input {
+    border: none;
+    border-radius: 10px;
+    color: #009FAC;
+    padding: 20px 19px;
+    text-align: start top;
+}
+
+@media (max-width: 800px) {
+    .form__input {
+        padding: 11px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form__input {
+        height: 44px;
+    }
+}
