@@ -39,3 +39,7 @@ li {
 button {
     background-color: transparent;
 }
+
+textarea {
+    resize: none;
+}
