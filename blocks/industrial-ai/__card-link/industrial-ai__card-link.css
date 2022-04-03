@@ -10,7 +10,21 @@
 }
 
 .industrial-ai__card-link:hover {
-  cursor: pointer;
+    cursor: pointer;
+}
+
+@media (min-width: 490px) {
+    .industrial-ai__card-link {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+@media (min-width: 767px) {
+    .industrial-ai__card-link {
+        font-size: 10px;
+        line-height: 14px;
+    }
 }
 
 @media (min-width: 1080px) {

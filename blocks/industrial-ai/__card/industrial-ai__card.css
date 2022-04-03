@@ -7,18 +7,18 @@
     box-sizing: border-box;
     border-radius: 10px;
 
-    background: linear-gradient(180deg, white 0%, transparent 100%);
+    background-color: white;
     background-size: cover;
 }
 
 @media (min-width: 400px) {
     .industrial-ai__card {
         position: relative;
-        padding: 30px 20px 20px 20px;
+        padding: 12px
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 490px) {
     .industrial-ai__card::after {
         content: '';
         background: linear-gradient(180deg, white 0%, transparent 150%);
@@ -27,6 +27,7 @@
         position: absolute;
         top: 0;
         border-radius: 10px;
+        padding: 30px 20px 20px 20px;
     }
 
     .industrial-ai__card:nth-of-type(1) {
